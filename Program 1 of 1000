@@ -1,0 +1,11 @@
+# Reverse of a string 
+
+str1  = input("enter a string : ")
+rvs = ""
+for i in str1:
+    rvs = i + rvs
+    print(rvs)
+print(" rvs is ", rvs)
+
+# A simple one line statement using reverse string 
+print("reverse is : ", str1[::-1])
