@@ -1,0 +1,17 @@
+# Adding list elements during run time
+# Method 1
+n = int(input(" Enter number of items in list: "))
+x = []
+for i in range(1,n+1):
+    name = input("Enter the list item :")
+    x.append(name)
+print(" The list is : ",x)
+
+# Method 2
+y = []
+while True:
+    name1 = input("Enter the list item [press q or Q to quit] :")
+    if name1 in "Qq":
+        break
+    y.append(name1)
+print(" Given list using method 2 is ", y)
