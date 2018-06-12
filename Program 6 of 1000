@@ -1,0 +1,6 @@
+# Program to display unique elements of given list or any list
+x = ['unix','aws','linux','perl','python','java','perl','linux','devops']
+y=[]
+for i in set(x):
+    y.append(i)
+print("List is ", y, "\n", "type is a :",type(y),"length: ",len(y))
