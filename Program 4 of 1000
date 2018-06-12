@@ -1,0 +1,11 @@
+# Program to display only duplicate elements of given list or any list
+x = ['unix','aws','linux','perl','python','java','perl','linux','devops']
+for i in set(x):
+    cnt = x.count(i)
+    print(cnt)
+    if cnt!= 1:
+        print(i)
+
+# Number of unique elements in a list
+unique = len(set(x))
+print(" Unique elements in list :", unique)
