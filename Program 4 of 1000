@@ -2,7 +2,7 @@
 x = ['unix','aws','linux','perl','python','java','perl','linux','devops']
 for i in set(x):
     cnt = x.count(i)
-    print(cnt)
+    #print(cnt)
     if cnt!= 1:
         print(i)
 
