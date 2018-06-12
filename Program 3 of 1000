@@ -1,0 +1,13 @@
+# Adding dictionary key value pair during run time
+# Example adding product and price to dictionary object
+x = {}
+while True:
+    pname = input(" Enter product name [press q or Q to quit] :")
+    if pname in "qQ":
+        break
+    price = float(input(" Enter the price value:"))
+    x[pname]= price
+
+print(" Dictionary is ",x)
+for i,j in x.items():
+    print("Product Name :", i,",Price : Rs", j)
