@@ -1,0 +1,32 @@
+# A online kids quiz related to GK - India
+x= {"What is national flower?":['Rose','Jasmine','Lotus','Tulip'],
+"What is national river?":['Yamuna','Ganga','Krishna','Godavari'],
+"What is national tree?":['Mango','Neem','Almond','Banayan'],
+"What is national bird?":['Pigeon','Parrot','Peacock','Sparrow'],
+"What is national sport?":['Cricket','Kabadi','Football','Hockey']}
+
+key = (3,2,4,3,4)
+score = 0
+index = 0
+for i,j in x.items():
+    print(i)
+    for m,n in enumerate(j):
+        print(m+1,":",n)
+    ans = int(input("Enter your answer: "))
+    if ans == key[index]:
+        score +=1
+    index+=1
+print(" Score is : ",score)
+if score == 5:
+    print(" Excellent ")
+elif score == 4:
+    print(" Very Good ")
+elif score == 3:
+    print(" Good ")
+elif score == 2:
+    print(" Satisfactory ")
+elif score==1:
+    print(" Needs improvement ")
+else:
+    print(" Try Again !!! ")
+    
