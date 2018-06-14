@@ -1,0 +1,26 @@
+# States and capital of India, reads either state name or capital to display the other
+# Works for 29 states of India and 7 Union territories
+India_states = {"Andhra Pradesh":"Hyderabad","Arunachal Pradesh":"Itanagar","Assam": "Dispur",
+"Bihar":"Patna", "Chhattisgarh":"Raipur","Goa":"Panaji","Gujarat":"Gandhinagar","Haryana":"Chandigarh",
+"Himachal Pradesh":"Shimla","Jammu and Kashmir":["Srinagar","Jammu"],"Jharkhand":"Ranchi","Karnataka":["Bengaluru","Banglore"],
+"kerala":"Thiruvananthapuram","Madhya Pradesh":"Bhopal","Maharashtra":"Mumbai","Manipur":"Imphal","Meghalaya":"Shillong","Mizoram":"Aizawl",
+"Nagaland":"Kohima", "Odisha":"Bhubaneswar", "Punjab":"Chandigarh","Rajasthan":"Jaipur","Sikkim":"Gangtok","Tamil Nadu":"Chennai","Telangana":"Hyderabad",
+"Tripura":  "Agartala", "Uttar Pradesh":"Lucknow", "Uttarakhand": "Dehradun", "West Bengal":"Kolkata","Andaman and Nicobar Islands":"Port Blair","Chandigarh": "Chandigarh","Dadar and Nagar Haveli": "Silvassa","Daman and Diu":"Daman","Delhi":"Delhi","Lakshadweep": "Kavaratti","Pondicherry":"Pondicherry"}
+
+name = input("Enter State or Capital name : ")
+count=0
+for i,j in India_states.items():
+    if name.title() == i:
+        if type(j)==list and len(j)>1:
+            for k in j:
+                print(k," is capital", end="")
+                count+=1
+        else:
+            print(j," is capital")
+            count+=1
+
+    if name.title() == j or name.title() in j:
+        print(i," is state")
+        count+=1
+if count==0:
+    print("Given state or capital name does not exists")
